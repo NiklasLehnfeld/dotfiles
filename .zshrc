@@ -22,6 +22,7 @@ plugins=(
 autoload -U compinit && compinit
 source $HOME/.zsh-extensions/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
+DEFAULT_USER prompt_context(){}
 #### END OH MY ZSH CONFIG ####
 
 
@@ -50,9 +51,3 @@ export GIT_DUET_CO_AUTHORED_BY=1
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 #### END SDK MAN ####
-
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
